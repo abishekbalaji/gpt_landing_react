@@ -32,8 +32,8 @@ const WhatGPT = () => {
         <p>Explore The Library</p>
       </div>
       <div className="gpt__whatgpt-container">
-        {FEATURES.map(({ title, text }) => (
-          <Feature title={title} text={text} />
+        {FEATURES.map((item, idx) => (
+          <Feature key={idx} title={item.title} text={item.text} />
         ))}
       </div>
     </div>

@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 
 import "./Navigation.css";
 
 const MENU = () => (
-  <>
+  <Fragment>
     <p>
       <a href="#home">Home</a>
     </p>
@@ -21,7 +21,7 @@ const MENU = () => (
     <p>
       <a href="#blog">Library</a>
     </p>
-  </>
+  </Fragment>
 );
 
 const Navigation = () => {
